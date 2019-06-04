@@ -1,0 +1,84 @@
+.navBar {
+    width: 100%;
+    position: fixed;
+    background: #1e272e;
+    /* background: #d35400; */
+/* background: #f39c12; */
+    top: 0;
+    left: 0;
+    height: 56px;
+    z-index: 1000;
+    color: #fff;
+}
+
+.navBar__nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+
+.navBar__logo {
+    margin-left: 20px;
+}
+
+.navBar__logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.speacer{
+    flex: 1;
+}
+
+.navBar__navItems {
+    display: flex;
+}
+
+.navBar__navItems ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navBar__navItems li {
+    padding:  8px;
+    cursor: pointer;
+}
+.navBar__navItems li:hover{
+   background: #d35400;
+   border-radius: 10px;
+}
+
+
+.navBar__navItems a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.navBar__navItems a:active,
+.navBar__navItems a:hover {
+    color: #000;
+    text-decoration: none;
+    
+}
+
+@media (max-width: 768px) {
+    .navBar__navItems ul{
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .navBar__toggleButton {
+        display: none;
+    }
+    .navBar__logo {
+        margin-left: 0;
+    }
+    
+}
